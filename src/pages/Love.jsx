@@ -1,7 +1,7 @@
 import React, {useCallback, useState, useEffect } from "react";
 import Particles from "react-particles";
 import emoji1 from "../assets/emoji1.png";
-import { loadFull } from "tsparticles";
+import { loadSlim } from "tsparticles-slim";
 import { motion } from "framer-motion";
 import kitty2 from "../assets/kitty2.gif";
 import { IoMdArrowBack } from "react-icons/io"
@@ -34,7 +34,7 @@ function Love() {
 
   //particle
   const particlesInit = useCallback(async (engine) => {
-        await loadFull(engine);
+        await loadSlim(engine);
     }, []);
   return (
     <div className="fixed top-0 left-0 w-full h-full bg-gradient-to-t from-rose-300 to-rose-50 flex flex-col justify-center items-center overflow-hidden">

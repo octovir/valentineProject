@@ -1,6 +1,6 @@
 import React, { useCallback, useState, useEffect } from "react";
 import Particles from "react-particles";
-import { loadFull } from "tsparticles";
+import { loadSlim } from "tsparticles-slim";
 import myGif from "../assets/hello-kitty-pixel-art.gif";
 import emoji1 from "../assets/emoji1.png";
 import { NavLink } from "react-router";
@@ -35,7 +35,7 @@ function Home() {
 
   // particles
   const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
+    await loadSlim(engine);
   }, []);
 
   return (
@@ -68,7 +68,7 @@ function Home() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3, ease: "easeOut" }} 
         className="relative z-10 flex flex-col items-center">
-        <img src={myGif} className="w-64 h-auto mb-4" />
+        <img src={myGif} alt="hello kitty" className="w-64 h-auto mb-4" />
         <div className="text-2xl text-rose-800">Do you love me Visa???</div>
         <div className=" opacity-30 text-rose-950 text-xs mt-2">made with ❤️ by ur bf</div>
       </motion.div>
