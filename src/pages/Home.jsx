@@ -16,9 +16,6 @@ function Home() {
 
   return (
     <body className='font-urbanist font-semibold bg-linear-to-t from-rose-300 to-rose-100'>
-        <div className='w-full flex flex-col justify-center items-center border'>
-            <img src={myGif} alt="my-gif" />
-        </div>
         <Particles 
             id="tsparticles"
             init={particlesInit}
