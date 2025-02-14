@@ -71,7 +71,7 @@ function Love() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, ease: "easeOut" }} 
-            className="z-10 flex flex-col md:flex-row justify-center items-center gap-6">
+            className="z-10 flex flex-col md:flex-row justify-center items-center gap-6 ">
             <div className=" p-2 flex flex-col justify-center items-center text-2xl text-rose-950 rounded-3xl w-28 h-28 bg-rose-50 shadow-lg">
                 <div className="text-3xl  text-rose-700 ">{time.days}</div>
                 <div>days</div>
@@ -84,7 +84,7 @@ function Love() {
                 <div className="text-3xl  text-rose-700 ">{time.minutes}</div>
                 <div>minutes</div>
             </div>
-            <div className=" p-2 flex flex-col justify-center items-center text-2xl text-rose-950 rounded-3xl w-28 h-28 bg-rose-50 shadow-lg mb-2">
+            <div className=" p-2 flex flex-col justify-center items-center text-2xl text-rose-950 rounded-3xl w-28 h-28 bg-rose-50 shadow-lg">
                 <div className="text-3xl  text-rose-700 ">{time.seconds}</div>
                 <div>seconds</div>
             </div>
