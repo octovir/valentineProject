@@ -31,23 +31,23 @@ function Linkpage() {
                             transition={{ duration: 0.3, ease: "easeOut" }} className="z-10 grid md:flex md:flex-row md:justify-center md:items-center md:gap-14 grid-cols-2 gap-9 w-full max-w-md mx-8 place-items-center justify-items-center">
               <NavLink to="/">
                 <motion.button 
-                className="hover:bg-transparent hover:scale-105 active:scale-95 text-rose-900 hover:text-rose-50  rounded-2xl bg-rose-50 w-36 h-36 shadow-lg transition-all duration-150 flex justify-center items-center">
+                className="hover:bg-transparent hover:scale-105 active:scale-95 text-rose-900 hover:text-rose-50  rounded-3xl bg-rose-50 w-36 h-36 shadow-lg transition-all duration-150 flex justify-center items-center">
                   <IoBackspace size={100} className=""/>
                 </motion.button> 
               </NavLink>
               <NavLink to="/Love">
-                <button className="hover:bg-transparent hover:scale-105 active:scale-95 text-rose-900 hover:text-rose-50  rounded-2xl bg-rose-50 w-36 h-36 shadow-lg transition-all duration-150 flex justify-center items-center">
+                <button className="hover:bg-transparent hover:scale-105 active:scale-95 text-rose-900 hover:text-rose-50  rounded-3xl bg-rose-50 w-36 h-36 shadow-lg transition-all duration-150 flex justify-center items-center">
                   <IoMailOpen size={100}/>
                 </button> 
               </NavLink>
               <NavLink to="/video">
-                <button className="hover:bg-transparent hover:scale-105 active:scale-95 text-rose-900 hover:text-rose-50  rounded-2xl bg-rose-50 w-36 h-36 shadow-lg transition-all duration-150 flex justify-center items-center">
+                <button className="hover:bg-transparent hover:scale-105 active:scale-95 text-rose-900 hover:text-rose-50  rounded-3xl bg-rose-50 w-36 h-36 shadow-lg transition-all duration-150 flex justify-center items-center">
                   <IoVideocam size={100}/>
                 </button> 
               </NavLink>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDAJ9OBoI-muxY7Jwqf7VoT1bUYA9KC3PVlLChX5pQLyZJ5w/viewform?usp=dialog"
                   target="blank">
-                <button className="hover:bg-transparent hover:scale-105 active:scale-95 text-rose-900 hover:text-rose-50  rounded-2xl bg-rose-50 w-36 h-36 shadow-lg transition-all duration-150 flex justify-center items-center">
+                <button className="hover:bg-transparent hover:scale-105 active:scale-95 text-rose-900 hover:text-rose-50  rounded-3xl bg-rose-50 w-36 h-36 shadow-lg transition-all duration-150 flex justify-center items-center">
                   <IoDocument size={100} />
                 </button> 
               </a>
