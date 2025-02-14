@@ -77,18 +77,18 @@ function Home() {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="relative flex flex-col gap-6 mt-8">
+      className="relative flex flex-col gap-6 mt-8 font-medium">
         {/* ปุ่ม Yes */}
         <NavLink to="/link">
             <button
-                className=" text-rose-800 bg-stone-50 hover:bg-stone-50 active:bg-stone-200 rounded-2xl w-24 h-14 transition duration-200 ease-in- hover:scale-110 active:scale-90 shadow-lg">
+                className=" text-rose-800 bg-rose-50 hover:bg-rose-100 active:bg-rose-200 rounded-2xl w-24 h-14 transition duration-200 ease-in- hover:scale-110 active:scale-90 shadow-lg">
             Yes
             </button>
         </NavLink>
 
         {/* ปุ่ม No ที่ขยับทีละนิด */}
         <button
-          className=" text-gray-50 bg-rose-700 hover:bg-rose-800 active:bg-rose-900 hover:scale-105 active:scale-95 rounded-2xl w-24 h-14 absolute transition-all duration-150 ease-in-out shadow-lg"
+          className=" text-rose-50 bg-rose-700 hover:bg-rose-800 active:bg-rose-900 hover:scale-105 active:scale-95 rounded-2xl w-24 h-14 absolute transition-all duration-150 ease-in-out shadow-lg"
           onClick={handleNoClick}
           style={{
             transform: `translate(${position.left}px, ${position.top}px)`,

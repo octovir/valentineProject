@@ -21,10 +21,10 @@ function Video() {
             init={particlesInit}
             options={{
               particles: {
-                number: { value: 14 },
+                number: { value: 100 },
                 shape: { type: "images", images: [{ src: emoji1 }] },
                 opacity: { value: 0.5 },
-                size: { value: { min: 20, max: 25 } },
+                size: { value: { min: 30, max: 35 } },
                 move: { enable: true, speed: 0.5 },
               },
               interactivity: {

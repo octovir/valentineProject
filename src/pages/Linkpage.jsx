@@ -24,7 +24,7 @@ function Linkpage() {
 
     return (
         <div className="  absolute inset-0 w-full h-full bg-gradient-to-t from-rose-300 to-rose-50 duration-1000 ease-in-out flex flex-col justify-center items-center">
-            <img src={kitty3} alt="hello kitty" className="w-56 h-auto mb-10" />
+            <img src={kitty3} alt="hello kitty" className="w-56 h-auto mb-10 z-10" />
             <motion.div 
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
@@ -60,7 +60,7 @@ function Linkpage() {
                     options={{
                       background: { color: "transparent" },
                       particles: {
-                        number: { value: 14 },
+                        number: { value: 50 },
                         shape: { type: "images", images: [{ src: emoji1 }] },
                         opacity: { value: 0.5 },
                         size: { value: { min: 20, max: 25 } },
