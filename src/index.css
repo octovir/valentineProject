@@ -6,7 +6,7 @@ html {
 }
 body {
   @apply h-full;
-  background-image: linear-gradient(#FFF1F2, #FDA4AF);
+  margin: auto;
 }
 div#__next {
   @apply h-full;

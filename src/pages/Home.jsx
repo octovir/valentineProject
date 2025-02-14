@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 function Home() {
   const stepSize = 80; // ระยะขยับของปุ่ม No
-  const padding = 50; // ป้องกันปุ่มออกนอกขอบจอ
+  const padding = 20; // ป้องกันปุ่มออกนอกขอบจอ
 
   // ตำแหน่งเริ่มต้นของปุ่ม No (อยู่ใต้ปุ่ม Yes)
   const [position, setPosition] = useState({ top: 0, left: 0 });
@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <div
-        className="min-h-full min-w-full pb-60 pt-30 mx-auto duration-1000 ease-in-out flex flex-col justify-center items-center overflow-hidden">
+        className=" h-screen w-screen bg-gradient-to-t from-rose-300 to-rose-50 mx-auto duration-1000 ease-in-out flex flex-col justify-center items-center overflow-hidden">
       {/* particles */}
       <Particles
         id="tsparticles"
