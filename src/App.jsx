@@ -4,6 +4,7 @@ import './App.css'
 import Home from "./pages/Home";
 import Love from './pages/Love';
 import Linkpage from './pages/Linkpage';
+import Video from './pages/Video';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/love" element={<Love />} />
         <Route path="/link" element={<Linkpage />} />
+        <Route path="/video" element={<Video />} />
       </Routes>
     </BrowserRouter>
   )

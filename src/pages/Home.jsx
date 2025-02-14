@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <div
-        className=" absolute inset-0 w-full h-full bg-gradient-to-t from-rose-300 to-rose-50 mx-auto duration-1000 ease-in-out flex flex-col justify-center items-center overflow-hidden">
+        className=" font-urbanist font-medium absolute inset-0 w-full h-full bg-gradient-to-t from-rose-300 to-rose-50 mx-auto duration-1000 ease-in-out flex flex-col justify-center items-center overflow-hidden">
       {/* particles */}
       <Particles
         id="tsparticles"
@@ -68,7 +68,7 @@ function Home() {
         transition={{ duration: 0.3, ease: "easeOut" }} 
         className="relative z-10 flex flex-col items-center">
         <img src={myGif} alt="hello kitty" className="w-64 h-auto mb-4" />
-        <div className="text-2xl text-rose-800">Do you love me Visa???</div>
+        <div className="text-4xl text-rose-800">Do you love me Visa???</div>
         <div className=" opacity-30 text-rose-950 text-xs mt-2">made with ❤️ by ur bf</div>
       </motion.div>
 
@@ -81,7 +81,7 @@ function Home() {
         {/* ปุ่ม Yes */}
         <NavLink to="/link">
             <button
-                className=" text-rose-800 bg-gray-50 hover:bg-gray-50 active:bg-transparent active:text-transparent rounded-2xl w-24 h-14 transition duration-200 ease-in- hover:scale-110 active:scale-90 shadow-lg">
+                className=" text-rose-800 bg-stone-50 hover:bg-stone-50 active:bg-stone-200 rounded-2xl w-24 h-14 transition duration-200 ease-in- hover:scale-110 active:scale-90 shadow-lg">
             Yes
             </button>
         </NavLink>

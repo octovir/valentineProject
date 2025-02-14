@@ -37,7 +37,7 @@ function Love() {
         await loadSlim(engine);
     }, []);
   return (
-    <div className="flex flex-col pb-2 pt-6 justify-center items-center overflow-hidden">
+    <div className="font-urbanist font-medium absolute inset-0 w-full h-full bg-gradient-to-t from-rose-200 to-rose-50 duration-1000 ease-in-out  flex flex-col pb-2 pt-6 justify-center items-center overflow-hidden">
       {/* particles */}
       <Particles
         id="tsparticles"
@@ -46,7 +46,7 @@ function Love() {
         options={{
           background: { color: "transparent" },
           particles: {
-            number: { value: 14 },
+            number: { value: 20 },
             shape: { type: "images", images: [{ src: emoji1 }] },
             opacity: { value: 0.5 },
             size: { value: { min: 20, max: 25 } },
@@ -89,15 +89,30 @@ function Love() {
                 <div>seconds</div>
             </div>
 
-            <NavLink to="/">
+            <NavLink to="/link">
                 <button className="w-12 h-12 bg-rose-700 rounded-full flex justify-center items-center transition-all duration-150 ease-in-out shadow-lg hover:bg-rose-800 active:bg-rose-900 hover:scale-105 active:scale-95">
                     <IoMdArrowBack size={24} color="#ffff"/>
                 </button>
             </NavLink>
         </motion.div>
 
-        
-
+        {/* mail */}
+        <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, ease: "easeOut" }} className="z-10 rounded-2xl shadow-lg bg-rose-50 mt-10 flex flex-col justify-center items-start w-[60%] p-20 text-rose-900">
+          <div className="text-3xl">
+            Happy Valentine’s Day na Visaa! ❤️
+          </div>
+          <div className=" mt-5 text-xl text-start">
+          I’m really sorry for making you wait. This website was made with love. I hope you’re having a wonderful time today naaa. This day always special for me. I’m so happy that we’re together. I can’t wait to see you naa. I miss you so much, my lovely Visaa.           </div>
+          <div className="mt-4 text-md text-start font-thai1 text-rose-300">
+            **อย่าลืมไปกรอกฟอร์มด้วย เดี๋ยวกลับมาแล้วพาไปเที่ยววว
+          </div>
+          <div className="mt-5 text-xl">
+            Love you, Visa 💕
+          </div>
+        </motion.div>
     </div>
   );
 }
