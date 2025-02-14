@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <div
-        className=" h-screen w-screen bg-gradient-to-t from-rose-300 to-rose-50 mx-auto duration-1000 ease-in-out flex flex-col justify-center items-center overflow-hidden">
+        className=" absolute inset-0 w-full h-full bg-gradient-to-t from-rose-300 to-rose-50 mx-auto duration-1000 ease-in-out flex flex-col justify-center items-center overflow-hidden">
       {/* particles */}
       <Particles
         id="tsparticles"

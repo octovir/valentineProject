@@ -4,7 +4,7 @@ import emoji1 from "../assets/emoji1.png";
 import { loadSlim } from "tsparticles-slim";
 import { motion } from "framer-motion";
 import kitty2 from "../assets/kitty2.gif";
-import { IoMdArrowBack } from "react-icons/io"
+import { IoMdArrowBack } from "react-icons/io";
 import { NavLink } from "react-router";
 
 function Love() {

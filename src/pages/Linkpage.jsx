@@ -13,11 +13,13 @@ function Linkpage() {
     }, []);
 
     return (
-        <div className=" flex py-60">
-            <div className=" z-10 w-full grid grid-cols-2 gap-9 mx-auto items-center justify-center">
+        <div className=" absolute inset-0 w-full h-full bg-gradient-to-t from-rose-300 to-rose-50 duration-1000 ease-in-out flex justify-center items-center">
+            <div className="z-10 grid grid-cols-2 gap-9 w-full max-w-md mx-9 place-items-center justify-items-center">
+              <NavLink to="/">
                 <button className="rounded-2xl bg-rose-50 w-36 h-36">
 
-                </button>
+                </button> 
+              </NavLink>
                 <button className="rounded-2xl bg-rose-50 w-36 h-36">
 
                 </button>
