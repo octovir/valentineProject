@@ -39,8 +39,8 @@ function Video() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, ease: "easeOut" }} className="w-[375px] h-[666px] mx-auto z-10">
       <iframe
-        className="w-full h-full rounded-xl shadow-2xl"
-        src={`https://www.youtube.com/embed/PMNuTXDqYjc?si=7ai2UyDHSDzp7ZWL`}
+        className="w-full h-full rounded-xl shadow-2xl opacity-90"
+        src={`https://www.youtube.com/embed/rwMYbWX12I0?si=WPOId756xrWyF8XR`}
         title="YouTube Short"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
