@@ -7,8 +7,8 @@ import { NavLink } from "react-router";
 import { motion } from "framer-motion";
 
 function Home() {
-  const stepSize = 50; // ระยะขยับของปุ่ม No
-  const padding = 20; // ป้องกันปุ่มออกนอกขอบจอ
+  const stepSize = 80; // ระยะขยับของปุ่ม No
+  const padding = 50; // ป้องกันปุ่มออกนอกขอบจอ
 
   // ตำแหน่งเริ่มต้นของปุ่ม No (อยู่ใต้ปุ่ม Yes)
   const [position, setPosition] = useState({ top: 0, left: 0 });
@@ -40,14 +40,13 @@ function Home() {
 
   return (
     <div
-        className=" duration-1000 ease-in-out fixed top-0 left-0 w-full h-full bg-gradient-to-t from-rose-300 to-rose-50 flex flex-col justify-center items-center overflow-hidden">
+        className="min-h-full min-w-full pb-60 pt-30 mx-auto duration-1000 ease-in-out flex flex-col justify-center items-center overflow-hidden">
       {/* particles */}
       <Particles
         id="tsparticles"
         className="absolute top-0 left-0 w-full h-full"
         init={particlesInit}
         options={{
-          background: { color: "transparent" },
           particles: {
             number: { value: 14 },
             shape: { type: "images", images: [{ src: emoji1 }] },
@@ -80,7 +79,7 @@ function Home() {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="relative flex flex-col gap-6 mt-8">
         {/* ปุ่ม Yes */}
-        <NavLink to="/love">
+        <NavLink to="/link">
             <button
                 className=" text-rose-800 bg-gray-50 hover:bg-gray-50 active:bg-transparent active:text-transparent rounded-2xl w-24 h-14 transition duration-200 ease-in- hover:scale-110 active:scale-90 shadow-lg">
             Yes
@@ -97,6 +96,7 @@ function Home() {
         >
           No
         </button>
+        
       </motion.div>
     </div>
   );

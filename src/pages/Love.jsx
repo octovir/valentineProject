@@ -37,7 +37,7 @@ function Love() {
         await loadSlim(engine);
     }, []);
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-gradient-to-t from-rose-300 to-rose-50 flex flex-col justify-center items-center overflow-hidden">
+    <div className="flex flex-col pb-2 pt-6 justify-center items-center overflow-hidden">
       {/* particles */}
       <Particles
         id="tsparticles"
